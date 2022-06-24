@@ -1,6 +1,3 @@
-from email.quoprimime import body_check
-
-
 def application(env, start_response):
     status = '200 OK'
     headers = [
