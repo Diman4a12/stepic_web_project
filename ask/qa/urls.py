@@ -2,7 +2,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     # /
-    url(r'^$', 'test'),
+    url(r'^$', 'test', name='main'),
     # /login/
     url(r'^login/$', 'tets', name="login"),
     # /signup/
