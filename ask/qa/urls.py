@@ -3,17 +3,17 @@ from .views import home, stub, question
 
 urlpatterns = [
     # /
-    url(r'^$', home, name="sign-in"),
+    url(r'^$', 'test'),
     # /login/
-    url(r'^login/$', stub, name="sign-in"),
+    url(r'^login/$', 'tets', name="login"),
     # /signup/
-    url(r'^signup/$', stub, name="sign-up"),
+    url(r'^signup/$', 'test', name="sign-up"),
     # /question/<123>/
-    url(r'^question/(\d+)/$', question, name="view-question"),
+    url(r'^question/(\d+)/$', 'test', name="question"),
     # /ask/
-    url(r'^ask/$', stub, name="ask-question"),
+    url(r'^ask/$', 'test', name="ask"),
     # /popular/
-    url(r'^popular/$', stub, name="top-questions"),
+    url(r'^popular/$', 'test', name="popular"),
     # /new/
-    url(r'^new/$', stub, name="latest-questions"),
+    url(r'^new/$', 'test', name="new"),
 ]
